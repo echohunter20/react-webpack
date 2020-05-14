@@ -11,7 +11,15 @@ npm i -D webpack webpack-cli
 
 ## 项目安装@babel/core @babel/preset-env @babel/preset-react
 ```
-npm i -D @babel/core @babel/preset-env @babel/preset-react
+npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react
+```
+不要忘了配置Babel！创建一个名为.babelrc 文件在项目文件夹中：
+```
+{
+
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+
+}
 ```
 
 
@@ -20,6 +28,11 @@ npm i -D @babel/core @babel/preset-env @babel/preset-react
 npm i -D html-webpack-plugin
 npm i -D file-loader url-loader style-loader css-loader babel-loader
 npm i -D webpack-dev-server
+```
+
+## 安装React依赖
+```
+npm i -D react react-dom react-router-dom
 ```
 
 ## 创建 webpack.config.js 文件，编写相关配置
